@@ -73,10 +73,10 @@ pip install pandas numpy matplotlib seaborn scikit-learn tensorflow jupyter
 ### Running the Analysis
 1. Clone this repository
    ```bash
-   git clone <repository-url>
-   cd ReneWind-Predictive-Maintenance
+   git clone https://github.com/sandesha21/ReneWind-Neural-Network-Analytics-AIML-project.git
+   cd ReneWind-Neural-Network-Analytics-AIML-project
    ```
-2. Install required dependencies
+2. Install required dependencies (if not already installed)
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn tensorflow jupyter
    ```
@@ -85,11 +85,12 @@ pip install pandas numpy matplotlib seaborn scikit-learn tensorflow jupyter
 
 ### File Structure
 ```
-├── ReneWind_Maintenance_Predictive_Neural_Network.ipynb  # Main analysis notebook
-├── Train.csv                                            # Training dataset (20k records)
-├── Test.csv                                             # Test dataset (5k records)
-├── PROJECT_REQUIREMENTS.md                              # Detailed business context & objectives
-└── README.md                                            # This file
+├── ReneWind_Maintenance_Predictive_Neural_Network.ipynb  # Complete analysis and model implementation notebook
+├── Train.csv                                            # Training dataset (20k records, 40 features)
+├── Test.csv                                             # Test dataset (5k records, 40 features)
+├── PROJECT_REQUIREMENTS.md                              # Detailed project documentation, business context & data dictionary
+├── README.md                                            # Project overview and setup guide
+└── LICENSE                                              # Project license information
 ```
 
 ## 🛠️ Tech Stack  
@@ -101,7 +102,10 @@ pip install pandas numpy matplotlib seaborn scikit-learn tensorflow jupyter
 
 ## 👨‍💻 Author  
 **Sandesh S. Badwaik**  
-- [LinkedIn](https://www.linkedin.com/in/sbadwaik/)
+*Data Scientist & Machine Learning Engineer*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sbadwaik/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sandesha21)
 
 ## 📋 Additional Resources
 
