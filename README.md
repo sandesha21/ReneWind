@@ -248,17 +248,6 @@ When running the notebook, you should see:
   - Model will still work on CPU (slower)
   - For optimal performance, use Google Colab with GPU enabled
 
-### Getting Help
-- Check [TensorFlow Documentation](https://www.tensorflow.org/guide)
-- Review [Jupyter Notebook Docs](https://jupyter-notebook.readthedocs.io/)
-- Check [Scikit-Learn Documentation](https://scikit-learn.org/stable/documentation.html)
-- Open an issue on GitHub with error details and system information
-
-## 🛠️ Tech Stack  
-- **Language:** Python  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow/Keras  
-- **Tools:** Jupyter Notebook / Google Colab  
-
 ---
 
 ## 👨‍💻 Author  
