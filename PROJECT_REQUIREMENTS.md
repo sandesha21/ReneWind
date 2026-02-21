@@ -60,3 +60,44 @@ The model should prioritize:
 2. **Optimizing overall cost** considering the cost hierarchy
 3. **Achieving high recall** for failure detection
 4. **Balancing precision** to avoid excessive inspection costs
+
+## Data Quality Notes
+
+### Missing Values & Data Integrity
+- Dataset is pre-processed and cleaned; minimal missing values expected
+- All 40 predictor variables are numeric (transformed sensor readings)
+- No categorical variables requiring encoding
+- Data is already standardized/normalized for model compatibility
+
+### Outliers & Anomalies
+- Sensor data may contain outliers due to extreme environmental conditions
+- Outliers are retained as they may indicate genuine failure signals
+- Statistical outlier detection should be applied cautiously to avoid removing critical failure indicators
+- Class imbalance may exist (more "No Failure" than "Failure" cases) - requires handling via class weighting or resampling
+
+### Data Characteristics
+- All features are anonymized/ciphered for confidentiality
+- No feature names provided; features are referenced as numeric indices
+- Data is already split into training and test sets with no overlap
+- No temporal ordering; observations are independent
+
+## Model Constraints & Assumptions
+
+### Model Limitations
+- **Binary Classification Only:** Model predicts failure/no-failure; does not predict failure severity or time-to-failure
+- **Sensor Data Dependency:** Predictions rely on sensor accuracy; faulty sensors will degrade model performance
+- **Historical Data Bias:** Model trained on past failure patterns; may not generalize to new turbine models or environmental conditions
+- **Real-time Constraints:** Model inference time should be <100ms for practical deployment
+
+### Key Assumptions
+- **Failure Patterns are Consistent:** Historical failure patterns will repeat in future data
+- **Sensor Calibration:** All sensors are properly calibrated and maintained
+- **Stationary Distribution:** Data distribution remains consistent over time (no concept drift)
+- **Feature Independence:** Features are treated as independent; multicollinearity is acceptable
+- **Balanced Cost Structure:** Cost hierarchy (Inspection < Repair < Replacement) remains constant
+
+### Deployment Considerations
+- Model requires regular retraining with new failure data
+- Monitoring for model drift is essential for long-term performance
+- Predictions should be reviewed by domain experts before maintenance decisions
+- Model performance may degrade with new turbine models or environmental changes
